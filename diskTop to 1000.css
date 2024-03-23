@@ -1,0 +1,684 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Alata", sans-serif;
+
+}
+
+.background-image {
+    height: 44.4vw;
+    background-image: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #a6a6a6;
+    padding: 40px 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-image header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.background-image header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Alata", sans-serif;
+    padding: 20px;
+    width: auto;
+    font-weight: 400;
+    /* margin-right: 122px; */
+}
+
+.background-image header ul li {
+    /* position: relative; */
+    /* display: contents;    */
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+.background-image header ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.background-image header ul li a::before {
+    transition: 0.3s;
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -13%;
+    width: 0;
+    transform: translateX(-50%);
+    height: 2.6px;
+    background-color: white;
+}
+
+.background-image header ul li a:hover::before {
+    width: 100%;
+}
+
+.background-image #inner {
+    margin-bottom: 3vw;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-size: 75px;
+    font-weight: 300;
+    text-wrap: wrap;
+    width: 780px;
+    text-align: left;
+    padding: 50px 50px 32px;
+    border: 2px white solid;
+}
+
+/*---------------- FIRST ----------------*/
+
+#first {
+    position: relative;
+    padding: 5em;
+    padding-top: 6em;
+    padding-bottom: 0;
+}
+
+#first img {
+    width: 47vw;
+}
+
+#interactiveQuote {
+    max-width: 500px;
+    position: absolute;
+    padding: 70px;
+    padding-bottom: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    margin-right: 7vw;
+}
+
+#interactiveQuote h1 {
+    margin-bottom: 20px;
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#interactiveQuote p {
+    color: hsl(0, 0%, 55%);
+    max-width: 350px;
+}
+
+/*---------------- SECOND ----------------*/
+
+#second {
+    padding: 5em;
+    padding-top: 6em;
+    padding-bottom: 12em;
+}
+
+#headContainer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+#headContainer h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 250;
+    font-size: 57px;
+}
+
+#headContainer a {
+    text-decoration: none;
+    width: 150px;
+    height: 42px;
+    text-align: center;
+    line-height: 2.4;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+    letter-spacing: 4px;
+    margin-top: 5px;
+}
+
+#headContainer a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#second #imagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#imgText {
+    position: relative;
+    overflow: hidden;
+}
+
+#imagesContainer #imgText img {
+    max-width: 350px;
+    min-width: calc((100% / 4) - 15px);
+    transition: 0.4s;
+}
+
+#text {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Sans';
+    text-wrap: wrap;
+    width: 100%;
+    font-weight: 400;
+    background: linear-gradient(360deg, black, transparent);
+    padding: 10px 13% 25px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#texty {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Sans';
+    text-wrap: wrap;
+    width: 100%;
+    font-weight: 400;
+    background: linear-gradient(360deg, black, transparent);
+    padding: 10px 39% 25px 13%;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#imgText:hover #texty {
+    opacity: 1;
+    color: black;
+    background: none;
+    background-color: white;
+}
+
+#imgText:hover #text {
+    opacity: 1;
+    color: black;
+    background: none;
+    background-color: white;
+}
+
+#imgText:hover img {
+    opacity: 0.3;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    padding: 50px 120px;
+    position: relative;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Alata", sans-serif;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-weight: 400;
+    margin-top: 27px;
+    margin-left: -10px;
+    max-width: 550px;
+}
+
+footer ul li {
+    padding: 10px;
+    
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+footer ul li a::before {
+    transition: 0.3s;
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -13%;
+    width: 0;
+    transform: translateX(-50%);
+    height: 2.6px;
+    background-color: white;
+}
+
+footer ul li a:hover::before {
+    width: 100%;
+}
+
+#right {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 5px;
+}
+
+footer p {
+    position: absolute;
+    right: 66px;
+    bottom: 42px;
+    color: hsl(0deg 0% 72.97%);
+}
+
+
+
+#secondy {
+    /* gap: 10px; */
+
+    padding: 5rem;
+}
+
+#secondyContainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 14px;
+    justify-content: center;
+}
+
+.imgAndText {
+    /* min-height: 500px; */
+    min-height: 450px;
+    /* width: 200px; */
+    position: relative;
+    min-width: 235px;
+    /* margin-bottom: 10px; */
+    flex-basis: calc(20%);
+}
+
+@media (min-width: 1250px) {
+    .imgAndText {
+        /* min-height: 40vh; */
+        max-height: 475px;
+        width: 275px;
+    }
+}
+/* @media (min-width: 1350px) {
+    .imgAndText {
+        min-height: 57vh;
+    }
+}
+@media (min-width: 1500px) {
+    .imgAndText {
+        max-height: 57vh;
+    }
+} */
+
+.imgAndText:hover::before {
+    opacity: 0.3;
+}
+
+.imgAndText:hover #darken {
+    background: none;    
+}
+
+.imgAndText:hover h2 {
+    color: black; 
+    font-weight: 400;
+    /* font-size: 32px; */
+}
+
+.imgAndText h2 {
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    left: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: 350;
+    font-size: 1.5rem;
+    width: 70px;
+    transition: 0.5s;
+}
+
+#darken {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(360deg, black, transparent);
+    transition: 0.4s;
+}
+
+
+
+#img-1::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-2::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-night-arcade.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-3::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-soccer-team.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-4::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-grid.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-5::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-from-above.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-6::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-pocket-borealis.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-7::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-curiosity.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+#img-8::before {
+    transition: 0.5s;
+    background-image: url("images/desktop/image-fisheye.jpg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}
+
+
+
+/* #imgText:hover::before  {
+    opacity: 0.4;
+    color: rgb(238, 0, 0);
+} */
+
+/* #imgText::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Sans';
+    text-wrap: wrap;
+    width: 74%;
+    font-weight: 400;
+    background: linear-gradient(360deg, black, transparent);
+    padding: 10px 13% 25px;
+} */
+
+/* #imgText:nth-child(1)::before { 
+    content: "DEEP EARTH";
+}
+#imgText:nth-child(2)::before { 
+    content: "NIGHT ARCADE";
+}
+#imgText:nth-child(3)::before { 
+    content: "SOCCER TEAM VR";
+}
+#imgText:nth-child(4)::before {
+    width: 55%;
+    padding-right: 100px;
+    content: "THE GRID";
+}
+#imgText:nth-child(5)::before { 
+    content: "FROM UP ABOVE VR";
+}
+#imgText:nth-child(6)::before { 
+    content: "POCKET BOREALIS";
+}
+#imgText:nth-child(7)::before { 
+    content: "THE CURIOSITY";
+}
+#imgText:nth-child(8)::before { 
+    content: "MAKE IT FISH EYE";
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #second {
+    padding: 0 180px;
+    background-color: white;
+}
+
+#second #headContainer {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#second #imagesContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+#imagesContainer img {
+    margin-bottom: 1vw;
+}
+
+#second h1 {
+    font-size: 50px;
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+    display: inline;
+    
+}
+
+#second a {
+    text-decoration: none;
+    background-color: white;
+    width: 155px;
+    line-height: 0.9;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    color: hsl(0, 0%, 41%);
+    border: 2px solid;
+    transition: 0.3s;
+}
+
+#second a:hover {
+    background-color: hsl(0, 0%, 41%);
+    color: white;
+} */
+
+@media (min-width: 1120px) {
+    #interactiveQuote {
+        margin-right: 15vw;
+    }
+}
+@media (min-width: 1350px) {
+    #interactiveQuote {
+        margin-right: 20vw;
+    }
+}
+@media (min-width: 1600px) {
+    #interactiveQuote {
+        margin-right: 25vw;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    #interactiveQuote {
+        margin-right: 32vw;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+
+
+    .background-image #inner {
+        margin-bottom: 4vw;
+        font-size: 50px;
+        width: 518px;
+        padding: 50px 50px 32px;
+        
+    }
+    .background-image {
+        padding: 10px 5vw;
+
+    }
+    #mid {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .background-image {
+        padding: 0px 3vw;
+
+    }
+    .background-image #inner {
+        font-size: 42px;
+        width: 378px;
+        padding: 20px 20px 12px;
+    }
+}
+
+/* @media screen and (max-width: 1450px) {
+    #interactiveQuote {
+        margin-right: 15vw;
+    }
+} */
+
+/* @media screen and (max-width: 1300px) {
+    #interactiveQuote {
+        margin-right: 12vw;
+
+    }
+
+    #imagesContainer #imgText img {
+        max-width: 228px;
+    }
+    
+    #second #imagesContainer {
+        gap: 40px;
+    }
+} */
+
+
+
+@media screen and (max-width: 1150px) {
+
+
+    footer ul {
+        max-width: 450px;
+    }
+}
+
+
+
+
+#burger {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+#all {
+    display: none;
+}
+
+#second {
+    display: none;
+}

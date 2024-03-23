@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    height: 100vh;
+    background-color: black;
+    z-index: 99;
+    width: 100%;
+    padding: 35px 20px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+#close {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+#navContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 17;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    gap: 13px;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+#navContainer a {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.background-image {
+    padding: 35px 20px;
+    background-image: url(images/mobile/image-hero.jpg);
+    min-height: 173vw;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(20px, -50%);
+    color: white;
+    text-wrap: wrap;
+    font-size: 11vw;
+    border: 1px solid;
+    padding: 18px;
+    padding-bottom: 17px;
+    padding-right: 5vw;
+    font-family: "Josefin Sans", sans-serif;
+    max-width: calc(100% - 40px);
+}
+
+#inner p {
+    width: 90%;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#first {
+    margin-block: 100px;
+    padding-inline: 20px;
+}
+
+#interactiveQuote h1 {
+    font-weight: 300;
+    font-family: 'Josefin Sans';
+    text-align: center;
+    margin-block: 40px 20px;
+    color: hsl(0, 0%, 17%);;
+}
+
+#interactiveQuote p {
+    font-family: alata;
+    font-weight: 400;
+    color: hsl(0, 0%, 55%);
+    line-height: 1.7;
+    text-align: center;
+}
+
+#first img {
+    width: 100%;
+}
+
+#headContainer h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    text-align: center;
+    margin-block: 0 30px;
+}
+
+#headContainer a {
+    display: none;
+}
+
+#second {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#text, #texty {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: 330;
+    font-size: 6.5vw;
+    text-wrap: wrap;
+    width: 43%;
+    z-index: 2;
+}
+
+#texty {
+    width: 35%;
+}
+
+#imgText {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+#imgText img {
+    width: 100%;
+}
+
+#darky {
+    width: 50%;
+    height: calc(100% - 5px);
+    z-index: 1;
+    bottom: 5px;
+    position: absolute;
+    background: linear-gradient(91deg, #1d1a1a, transparent);
+}
+
+#all {
+    text-decoration: none;
+    color: #171717;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: 'Alata';
+    padding: 10px 30px 12px;
+    width: 40vw;
+    border: 1px solid;
+    margin-top: 17px;
+    transition: 0.3s;
+}
+
+#all:hover {
+    color: white;
+    background-color: #171717;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: alata;
+}
+
+#right ul {
+    display: flex;
+    margin-block: 10px 5px;
+    list-style: none;
+    gap: 17px;
+    flex-direction: row;
+}
+
+footer ul {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-block: 30px;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: hsl(0, 0%, 55%);
+    margin-top: 15px;
+    font-family: 'Josefin Sans';
+    text-wrap: nowrap;
+}
+
+#secondy {
+    display: none;
+}
