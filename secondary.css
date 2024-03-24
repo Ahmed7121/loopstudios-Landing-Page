@@ -163,11 +163,12 @@ header ul li a {
     position: relative;
     display: block;
     margin-bottom: 15px;
-
+    transition: 0.5s;
 }
 
 #imgText img {
     width: 100%;
+    transition: 0.5s;
 }
 
 #darky {
@@ -177,6 +178,7 @@ header ul li a {
     bottom: 5px;
     position: absolute;
     background: linear-gradient(91deg, #1d1a1a, transparent);
+    transition: 0.5s;
 }
 
 #all {
@@ -243,4 +245,21 @@ footer p {
 
 #secondy {
     display: none;
+}
+
+
+#imgText:hover img {
+    opacity: 0.4;
+}
+#imgText:hover #darky {
+    opacity: 0.4;
+}
+#imgText:hover #text {
+    color: black;
+    font-weight: 400;
+}
+
+#imgText:hover #texty {
+    color: black;
+    font-weight: 400;
 }
