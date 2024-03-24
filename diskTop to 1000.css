@@ -180,7 +180,7 @@ body {
 #imagesContainer #imgText img {
     max-width: 350px;
     min-width: calc((100% / 4) - 15px);
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 #text {
@@ -196,7 +196,7 @@ body {
     background: linear-gradient(360deg, black, transparent);
     padding: 10px 13% 25px;
     text-decoration: none;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 #texty {
@@ -212,7 +212,7 @@ body {
     background: linear-gradient(360deg, black, transparent);
     padding: 10px 39% 25px 13%;
     text-decoration: none;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 #imgText:hover #texty {
@@ -374,7 +374,7 @@ footer p {
     height: 50%;
     width: 100%;
     background: linear-gradient(360deg, black, transparent);
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 
